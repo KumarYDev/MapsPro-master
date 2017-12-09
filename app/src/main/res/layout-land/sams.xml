@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fmlay"></FrameLayout>
+
+
+
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:visibility="visible"
+        android:layout_margin="5dp"
+        android:id="@+id/searchhere"></android.support.v7.widget.SearchView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/topfloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:fabSize="mini"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="95dp"
+        android:visibility="invisible"
+        app:backgroundTint="#ffffff"
+        android:src="@drawable/ic_dashboard_black_24dp"
+       />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/leftfloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:fabSize="mini"
+        android:visibility="invisible"
+        android:layout_marginRight="95dp"
+        android:layout_marginBottom="15dp"
+        app:backgroundTint="#ffffff"
+        android:src="@drawable/abc"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        app:backgroundTint="#ffffff"
+        android:src="@drawable/ic_settings_black_24dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"></android.support.v7.widget.RecyclerView>
+
+
+</FrameLayout>
